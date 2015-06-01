@@ -1,0 +1,72 @@
+<html>
+<head>
+<link rel="stylesheet" href="order.css">
+
+  
+  <link rel="stylesheet" href="iosOverlay.css">
+
+<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="order.js"></script>
+<style>
+#bodyid
+{
+  background: url(back3.jpg)center center fixed;
+  background-repeat: no-repeat ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+</style>
+</head>
+<body id="bodyid">
+<div id="wrapper">
+	
+	<div id="head">
+		<h1><center>Chets Glass</center></h1>
+	</div>
+	
+	<div id="content">
+		<h3><center><b>New Orders</b><hr style="color:white;"></center></h3>
+		<p><center><a href="index.html" style="font-size:25px; color:white;">Back 2 Home</a></center></p>
+		<div id="order">
+		<form name="form" >
+			<table width="100%">
+				<tr><td><input type="text" class="txtbox" name="custname" id="custname" placeholder="Customer Name"></td></tr>
+				<tr><td><input type="text" class="txtbox" name="custaddr" id="custaddr" placeholder="Customer Address"></td></tr>
+				<tr><td><input type="text" class="txtbox" name="custpin" id="custpin" placeholder="Customer Pincode"></td></tr>
+				<tr><td><input type="text" class="txtbox" name="custstate" id="custstate" placeholder="Customer State"></td></tr>
+				<tr><td><input type="text" class="txtbox" name="custcity" id="custcity" placeholder="Customer City"></td></tr>
+				<tr><td><input type="text" class="txtbox" name="custmob" id="custmob" placeholder="Customer Mobile"></td></tr>
+				<tr><td><input type="text" class="txtbox" name="custdeldate" id="custdeldate" placeholder="Delivery Date"></td></tr>
+				<tr><td><input type="text" class="txtbox" name="proname" id="proname" placeholder="Product Name"></td></tr>
+				<tr><td><input type="text" class="txtbox" name="proprice" id="proprice" placeholder="Product Price"></td></tr>
+				<tr><td><input type="text" class="txtbox" name="qty" id="qty" placeholder="Quantity"></td></tr>
+				<tr><td><input type="text" class="txtbox" name="netamt" id="netamt" placeholder="Net Amount"></td></tr>
+				<tr><td><input type="submit" class="txtbox btn" id="loadToSuccess" value="Place Order"></td></tr>
+			</table>
+		</form>
+		</div>
+	</div>
+	
+</div>
+<script src="iosOverlay.js"></script>
+  <script src="spin.min.js"></script>
+  <script src="prettify.js"></script>
+  <script src="custom.js"></script>
+  <script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-37502505-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+	
+	
+  </script>
+
+</body>
+</html>

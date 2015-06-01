@@ -1,0 +1,76 @@
+
+
+
+#wrapper
+{
+	margin:0 auto;
+	border:0px solid black;
+	height:95%;
+	//width:100%;
+	//min-height:100%;
+}
+
+#head
+{
+	margin:2% auto;
+	border:0px solid black;
+	min-height:23%;
+	height:70px;
+	font-variant:small-caps;
+}
+
+#head h1
+{
+	color:white;
+	font-family:Calibri;
+	font-variant:small-caps;
+	font-weight:lighter;
+	text-decoration:overline;
+}
+
+#content
+{
+	margin:2% auto;
+	border:0px solid black;
+	min-height:100px;
+	height:70%;
+	font-variant:small-caps;
+}
+
+#content h3
+{
+	color:white;
+	font-family:Calibri;
+	font-variant:small-caps;
+	font-weight:lighter;
+	text-decoration:overline;
+}
+
+#option
+{
+	border:0px solid black;
+	margin:10px 5px;
+	text-align:center;
+	color:black;
+	background-color:white;
+	border-radius:10px;
+	font-size:20px;
+	text-decoration:none;
+}
+
+a
+{
+	text-decoration:none;
+	color:black;
+}
+.txtbox
+{
+width:100%;
+font-size:x-large;
+margin:5px 2px;
+border-radius:5px;
+border:0px;
+padding:5px;
+font-weight:lighter;
+font-family:Calibri;
+}

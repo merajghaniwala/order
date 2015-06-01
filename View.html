@@ -1,0 +1,65 @@
+<html>
+<head>
+<link rel="stylesheet" href="order.css">
+<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+<style>
+#bodyid
+{
+  background: url(back3.jpg)center center fixed;
+  background-repeat: no-repeat ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+</style>
+
+<script>
+
+$(document).ready(function()
+{
+	$.get('http://www.chetsglass.com/android/showorder.php?id='+getParameterByName('id'),{}, function(data){
+		 $("#list").html(data);	 
+	});
+	
+	function getParameterByName(name) 
+	{
+    	name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    	var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),results = regex.exec(location.search);
+    	return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+	}
+});
+</script>
+</head>
+<body id="bodyid">
+<form>
+<div id="wrapper">	
+	<div id="head">
+		<h1><center>Chets Glass</center></h1>
+	</div>
+	
+	<div id="content">
+		<h3><center><b>New Orders</b><hr style="color:white;"></center></h3>
+		<p><center><a href="index.html" style="font-size:25px; color:white;">Back 2 Home</a></center></p>
+		<div id="list" style="color:white;">
+			<table width="100%">
+				<tr><td style="color:white;">Customer Name</td><td><input type="text" name="" id=""  class="txtbox" placeholder="" value="" ></td></tr>
+				<tr><td style="color:white;">Customer Address</td><td><input type="text" name="" id=""  class="txtbox" placeholder="" value="" ></td></tr>
+				<tr><td style="color:white;">Pincode</td><td><input type="text" name="" id=""  class="txtbox" placeholder="" value="" ></td></tr>
+				<tr><td style="color:white;">State</td><td><input type="text" name="" id=""  class="txtbox" placeholder="" value="" ></td></tr>
+				<tr><td style="color:white;">City</td><td><input type="text" name="" id=""  class="txtbox" placeholder="" value="" ></td></tr>
+				<tr><td style="color:white;">Mobile</td><td><input type="text" name="" id=""  class="txtbox" placeholder="" value="" ></td></tr>
+				<tr><td style="color:white;">Delivery Date</td><td><input type="text" name="" id=""  class="txtbox" placeholder="" value="" ></td></tr>
+				<tr><td style="color:white;">Product Name</td><td><input type="text" name="" id=""  class="txtbox" placeholder="" value="" ></td></tr>
+				<tr><td style="color:white;">Price</td><td><input type="text" name="" id=""  class="txtbox" placeholder="" value="" ></td></tr>
+				<tr><td style="color:white;">Quantity</td><td><input type="text" name="" id=""  class="txtbox" placeholder="" value="" ></td></tr>
+				<tr><td style="color:white;">Net Amount</td><td><input type="text" name="" id=""  class="txtbox" placeholder="" value="" ></td></tr>				
+			</table>
+		</div>
+		
+	</div>
+</div>
+
+</form>
+</body>
+</html>
